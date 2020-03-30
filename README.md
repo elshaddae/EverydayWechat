@@ -6,15 +6,8 @@ This project relies on the web version of WeChat for development. If you cannot 
 This project relies on the web version of WeChat for development. If you cannot log in, you cannot use this project; there is no solution.
 Web version of WeChat address: https://wx.qq.com/ .
 
-Find a Python & Android job in Beijing.
-Add WeChat: address .
 
 Version update log
-
-Recently, a similar project with different functions was launched: WeChat plus group assistant .
-Welcome everyone star.
-
-It is forbidden to use this tool for commercial purposes , such as legal disputes have nothing to do with me.
 
 Note: If you add a Turing Robot reply to your girlfriend, please consider it carefully! !! !! !!
 Not every one of your girlfriends can accept it. You use robots to reply to "heartwarming words" and comfort her. Artificial intelligence may also be a mentally handicapped robot. Think about it if the robot responds to your girlfriend: "Let's break up." Maybe you really broke up. Although I will silently like in my heart (confessions of a single dog)
