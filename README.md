@@ -19,7 +19,6 @@ It is forbidden to use this tool for commercial purposes , such as legal dispute
 Note: If you add a Turing Robot reply to your girlfriend, please consider it carefully! !! !! !!
 Not every one of your girlfriends can accept it. You use robots to reply to "heartwarming words" and comfort her. Artificial intelligence may also be a mentally handicapped robot. Think about it if the robot responds to your girlfriend: "Let's break up." Maybe you really broke up. Although I will silently like in my heart (confessions of a single dog)
 
-GitHub stars GitHub forks 请点击页面顶部靠右 star 与 fork
 
 Function Description
 Support automatic reply to multiple WeChat friends.
@@ -69,7 +68,8 @@ Configure an auto-reply robot.
 Turn on automatic reply
 Set is_auto_relay to: True.
 2. Choose a channel
-机器人渠道（1: 图灵机器人，2: 一个AI ,3 : 青云客，4 腾讯智能闲聊，5:天行机器人，6：海知智能，7：思知机器人)
+Robot Channel (1: Turing Robot, 2: One AI, 3: Qingyunke, 4 Tencent Smart Chat, 5: Skywalk Robot, 6: Haizhi Intelligence, 7: Sizhi Robot)
+
 bot_channel: 7
 By default, it is a smart robot, but it is the smartest without applying for a key. .
 
@@ -80,17 +80,19 @@ There are two modes
 At this time, you can set the members of the whitelist that can reply, as follows:
 
 is_auto_reply_all：False
-# 指定自动回复的好友名单。
+# Specify a list of friends to auto-reply。
 auto_reply_white_list:
-  - '好友1'
-  - '好友2'
+  - 'Person1'
+  - 'Person2'
+  - 'John'
 (2) When auto reply is enabled for all friends, that is: when is_auto_reply_all: True.
 Choose not to automatically reply to blacklist members: as follows
 
 is_auto_reply_all：True
 auto_reply_black_list:
-    - '好友1'
-    - '好友2'
+  - 'Person1'
+  - 'Person2'
+  - 'Mary'
 4. Configure correlators
 In addition to Qingyunke, other robots need to go to the corresponding official website, register and obtain the corresponding key. Configure whichever you need.
 
@@ -100,38 +102,38 @@ Create a robot and get apikey. Fill in the _config.yaml file:
 Note: Do not turn on the "Key" option.
 
 turing_conf:
-  apiKey: '你所获取apikey'
+  apiKey: 'your apikey'
 The Turing robot must be authenticated before it can be used. The free version users can use 100 messages a day, and use and cherish.
 
 II. Skywalk Robot
 Open the Tianxing Data Registration page: https://www.tianapi.com/signup.html to register.
 In the first line of the personal center, you can get apikey.
 txapi_conf:
-  app_key: '个人中心中的key'
-  reply_name: '宝宝' # 回复的人的名字(可空)（也可在个人中心->机器人管理 修改）
-  bot_name: '老公' # 机器人的名字（可空）
+  app_key: 'The key in personal center'
+  reply_name: 'Bae' #The name of the person who responded (can be empty) (also can be modified in Personal Center-> Robot Management)
+  bot_name: 'Buddy' # Robot name (can be empty）
 III. Smart Chat (Tencent)
 Open https://ai.qq.com/product/nlpchat.shtml and log in.
 Click Free Use-> Access Ability-> Create Application-> After the creation is successful, app_id and app_key will be displayed.
 Click Application Management-> "Name of the project you created"-> Access capability-> Smart chat-> Learn more-> Access capability-> "Select project"-> Confirm interface.
 Fill in app_id, app_key into yaml.
 qqnlpchat_conf:
-    app_id: '你申请的api_id'
-    app_key: '你申请的app_key'
+    app_id: 'Your api_id'
+    app_key: 'Your app_key'
 IV. Configure "One AI"
 Open the Turing Robot official website: http://www.yige.ai to register.
 Create the application, get the "Client Access Token" in the "API Key" and
 fill it in the _config.yaml file:
 
 yigeai_conf:
-  client_token: '客户访问令牌'
+  client_token: 'Client access token'
 V. Configure `` Thinking Robot ''
 Open Sizhi official website: https://www.ownthink.com/ to register.
 Create the robot and get the appid.
 Fill in the _config.yaml file:
 
 ownthink_conf:
-    app_key: '你申请的api_id'
+    app_key: 'The api_id you applied for'
 Regarding the auto-response, the information that can be disclosed at present:
 
 Can only reply to text messages automatically;
@@ -150,18 +152,18 @@ alarm_timed:
   - "12:30"
   - "22:00"
 wechat_name:
-  - '文件传输助手'
-  - '诗风'
+  - 'File Transfer Assistant'
+  - 'Another name (John)'
 group_name:
-  - 'EverydayWechat 交流群'
+  - 'EverydayWechat Group'
 is_tomorrow: False
-city_name: '桂林'
+city_name: 'Hangzhou'
 dictum_channel : 3
 start_date: '2017-10-10'
-start_date_msg: '爱你的第{}天'
+start_date_msg: 'The {}th Day of the event e.g relationship length. E.g 3rd day'
 calendar: True
-horescope: "处女座"
-sweet_words: '你脚下的蚂蚁'
+horescope: "vigue"
+sweet_words: 'Signature'
 
 Related parameter description:
 
@@ -192,22 +194,24 @@ Of course, you can also set up a different set of solutions according to your ne
 
 A reminder:
 
-2019-06-29 星期六 农历五月廿七 
-【宜】嫁娶,祭祀,沐浴,扫舍,修饰垣墙 
-【忌】行丧,安葬 
-桂林天气预报 
-【今日天气】阵雨
-【今日温度】低温 26.0℃,高温 33.0℃ 
-【今日风速】南风<3级
-【出行提示】阵雨来袭，出门记得带伞 
-【桂林PM2.5】142 轻度污染
-处女座今日运势 
-【幸运颜色】2
-【幸运数字】薄荷绿
-【综合运势】今天的你有机会重逢旧同学、旧朋友，对方会为你带来一些小惊喜，可能是某个不错的商机，也可能是某个消息。工作/学习上，今天的你目标性很强，能把当初奋斗的初心捡回来，重新出发。感情方面，有伴者今天要提防烂桃花的挑拨离间，多给对方一些信任。
-你知道五氧化二磷被氧化前是什么样子嘛，什么样子？五二磷。 
-宝贝这是我们在一起的第628天 
-你脚下的蚂蚁
+2019-06-29 Saturday Lunar Calendar May 27
+[Should] marry, sacrifice, bath, sweep the house, decorate the wall
+[Bogey] mourning, burial
+Guilin weather forecast
+[Today's Weather] Shower
+[Today's temperature] Low temperature 26.0 ℃, high temperature 33.0 ℃
+[Wind Speed Today] South Wind <3
+[Travel Tips] Showers are coming, remember to bring an umbrella when going out
+[Hangzhou PM2.5] 142 Mild pollution
+Virgo fortune today
+[Lucky color] 2
+[Lucky number] mint green
+[Comprehensive fortune] Today you have a chance to meet old classmates and old friends again. The other party will bring you some small surprises, which may be a good business opportunity or a certain news. In work / study, today you have a strong purpose, you can pick up the original heart of the struggle and start again. In terms of feelings, the companions today should beware of the rottenness of the rotten peach blossoms and give each other more trust.
+Do you know what it looked like before phosphorus pentoxide was oxidized? Pentaphosphorus.
+Baby this is our 628th day together
+Signature
+
+
 Configure group assistant function
 Just put the form description.
 
@@ -239,7 +243,7 @@ Download this project or clone project directly to local.
 Install dependencies using pip:
 
 pip3 install -r requirements.txt
-# 或者是使用 pip
+# Using pip
 # pip install -r requirements.txt
 run
 In the local cmd, jump to the project directory and run:
