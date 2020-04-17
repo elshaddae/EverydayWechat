@@ -9,8 +9,7 @@ Web version of WeChat address: https://wx.qq.com/ .
 
 Version update log
 
-Note: If you add a Turing Robot reply to your girlfriend, please consider it carefully! !! !! !!
-Not every one of your girlfriends can accept it. You use robots to reply to "heartwarming words" and comfort her. Artificial intelligence may also be a mentally handicapped robot. Think about it if the robot responds to your girlfriend: "Let's break up." Maybe you really broke up. Although I will silently like in my heart (confessions of a single dog)
+Note: If you add a Turing Robot reply to your contacts, please consider it carefully! !! !! !! Artificial intelligence may also be a mentally handicapped robot. Think about it carefully because sometimes the bot may end up answering texts that can affect the rest of your life just because it was credited that the wrong texts were your true intentions.
 
 
 Function Description
@@ -18,7 +17,7 @@ Support automatic reply to multiple WeChat friends.
 Send reminders to friends and group chat groups at regular intervals, including (weather, aphorisms, custom words).
 Group assistant function, you can automatically reply to the group, query the most popular garbage classification, weather, calendar, real-time box office, courier information, PM2.5 and so on.
 If you have no friends to test and send reminders, and only one person can't play the auto reply, what should I do (cry.jpg).
-You can add "File Transfer Assistant" as a girlfriend (what is the girlfriend you said is your hands.jpg). Such a number can also be tested, send a reminder to the file transfer assistant, and chat intelligently with the file transfer assistant.
+You can add "File Transfer Assistant" as a recipient too. Such way it can also be tested, send a reminder to the file transfer assistant, and chat intelligently with the file transfer assistant.
 
 Related data sources
 Weather Information:
